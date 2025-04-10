@@ -5,4 +5,4 @@
   tasks:
     - name: Get hostname task
       debug:
-        msg: "{{ ansbile_fqdn }}"
+        msg: "{{ ansible_fqdn }}"
