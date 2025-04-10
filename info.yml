@@ -1,0 +1,8 @@
+---
+- name: Get hostname
+  hosts: all
+  become: true
+  tasks:
+    - name: Get hostname task
+      debug:
+        msg: "{{ ansbile_fqdn }}"
