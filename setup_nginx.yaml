@@ -1,0 +1,15 @@
+---
+- name: Install nginx
+  become: true
+  hosts: all
+  tasks:
+    - name: Install nginx
+      apt:
+        name: nginx
+        state: present
+
+    - name: Start and enable
+      systemd:
+        name: nginx
+        state: started
+        enabled: true
